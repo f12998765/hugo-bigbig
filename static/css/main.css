@@ -1,0 +1,122 @@
+body{
+  color: #182532;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #182532;
+}
+
+a:hover{
+  color: #eb4e32;
+}
+
+.bigboom{
+  width: 100%;
+  height: 40rem;
+  line-height: 40rem;
+  text-align: center;
+  font-size: 13rem;
+  font-weight: 600;
+  color: #182532;
+  letter-spacing: 1.5rem;
+}
+
+.header{
+  width: 72%;
+  height: 6rem;
+  line-height: 6rem;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #182532;
+  letter-spacing: 0.5rem;
+  margin: 3rem auto;
+}
+
+.gos{
+  float: right;
+  letter-spacing: 0.1rem;
+  line-height: 9rem;
+  font-size: 2rem;
+}
+
+.big_gos{
+  text-align: right;
+  position: absolute;
+  right: 14%;
+  top: 15%;
+  font-size: 3rem;
+}
+.md_title{
+  width: 72%;
+  height: 10rem;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 600;
+  color: #182532;
+  letter-spacing: 0.3rem;
+  margin: 8rem auto;
+}
+
+
+.md_meta{
+  width: 72%;
+  text-align: right;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+.md_tag{
+  width: 72%;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 auto ;
+}
+.md_hr{
+  height:1px;
+  width: 72%;
+  border:none;
+  border-top:1px dashed #182532;
+  margin: 6rem auto;
+}
+.md_content{
+  width: 72%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.footer{
+  width: 72%;
+  height: 6rem;
+  line-height: 6rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main{
+  width: 72%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.list{
+  width: 100%;
+  margin: 6rem 0;
+}
+
+.list_tit{
+  font-size: 4rem;
+}
+
+.list_{
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.tag{
+  float: left;
+}
+.time{
+  float: right;
+}
