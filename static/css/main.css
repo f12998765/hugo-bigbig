@@ -37,7 +37,6 @@ a:hover{
   width: 100%;
   height: 100%;
   border-bottom:1px dashed #182532;
-  margin-bottom: 6rem;
 }
 .header{
   width: 72%;
@@ -138,6 +137,24 @@ a:hover{
   float: right;
 }
 
+.tagdiv{
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+#gotop{
+    display:none;
+    width:6rem;
+    height:6rem;
+    position:fixed;
+    right:4rem;
+    bottom:9rem;
+    border-radius: 3rem;
+    border: 1px dashed #182532;
+    background:url(../img/z.png) no-repeat;
+    background-size:  100% 100%;
+}
 @media all and (max-width: 1200px){
   .md_content{
     width: 88%;
@@ -148,5 +165,11 @@ a:hover{
   .md_title{
     margin: 8rem auto 6rem auto;
     line-height: 3rem;
+  }
+  #gotop{
+    display: none;
+  }
+  .tagdiv{
+
   }
 }

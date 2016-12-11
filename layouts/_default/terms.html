@@ -1,0 +1,60 @@
+{{ partial "header.html" . }}
+
+<div class="md_header">
+	<div class="header">
+		<a href="/">{{ .Site.Title}}</a>
+		<div class="gos">
+			<span class="go"><a href="/">Home</a></span>
+			<span class="go"><a href="/tags">Tags</a></span>
+			<span class="go"><a href="/about">About</a></span>
+		</div>
+	</div>
+
+	<div class="md_title">{{ .Title }}</div>
+
+</div>
+<script type="text/javascript" src="../js/tagcloud.js"></script>
+<script type="text/javascript">
+    var settings = {
+    //height of sphere container
+    height: 600,
+    //width of sphere container
+    width: 600,
+    //radius of sphere
+    radius: 200,
+    //rotation speed
+    speed: 3,
+    //sphere rotations slower
+    slower: 0.9,
+    //delay between update position
+    timer: 3,
+    //dependence of a font size on axis Z
+    fontMultiplier: 30,
+    //tag css stylies on mouse over
+    hoverStyle: {
+        border: 'none',
+        color: '#0b2e6f'
+    },
+    //tag css stylies on mouse out
+    mouseOutStyle: {
+        border: '',
+        color: ''
+    }
+    };
+    $(document).ready(function(){
+        $('#tagcloud').tagoSphere(settings);
+    });
+</script>
+<div class="tagdiv">
+
+	<div id="tagcloud">
+      <ul>
+					{{ range $name, $value := .Site.Taxonomies.tags }}
+							<li><a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></a></li>
+					{{ end }}
+			</ul>
+	</div>
+
+</div>
+
+{{ partial "footer.html" . }}
