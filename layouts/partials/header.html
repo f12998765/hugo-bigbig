@@ -24,9 +24,9 @@
 <div class="top">
 
 	<div class="gos">
-		<span class="go"><a href="{{ .Site.BaseURL }}">Home</a></span>
-		<span class="go"><a href="{{ .Site.BaseURL }}/tags">Tags</a></span>
-		<span class="go"><a href="{{ .Site.BaseURL }}/about">About</a></span>
+		<span class="go"><a href="{{$.Site.BaseURL}}">Home</a></span>
+		<span class="go"><a href="{{$.Site.BaseURL}}tags">Tags</a></span>
+		<span class="go"><a href="{{$.Site.BaseURL}}about">About</a></span>
 	</div>
 	
 	{{ if eq $isHomePage true }}
