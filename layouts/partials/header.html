@@ -10,21 +10,37 @@
 <link href="https://cdn.bootcss.com/highlight.js/9.7.0/styles/tomorrow.min.css" rel="stylesheet">
 <script src="https://cdn.bootcss.com/highlight.js/9.8.0/highlight.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="../js/top.js"></script>
+<script src="{{ .Site.BaseURL }}js/top.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+{{ if eq .Title "Tags"}}
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/jqcloud.css">
+	<script type="text/javascript" src="{{ .Site.BaseURL }}js/jqcloud.js"></script>
+{{ end }}
 <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
 </head>
 <body>
 
-<div id="gotop"></div>
+<div id="gotop" title="🚀 go top"></div>
 
+<div class="top">
+
+	<div class="gos">
+		<span class="go"><a href="/">Home</a></span>
+		<span class="go"><a href="/tags">Tags</a></span>
+		<span class="go"><a href="/about">About</a></span>
+	</div>
+	
 	{{ if eq $isHomePage true }}
-	<div class="big_gos">
-			<span class="go"><a href="/">Home</a></span>
-			<span class="go"><a href="/tags">Tags</a></span>
-			<span class="go"><a href="/about">About</a></span>
-	</div>
-	<div class="bigboom">
-		{{ .Site.Title }}
-	</div>
+		<div class="siteTit">
+			{{ .Site.Title }}
+		</div>
+	{{ else }}
+		<div class="tit">
+			{{ .Title }}
+		</div>
+
 	{{ end }}
+
+</div>
+
+
