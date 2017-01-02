@@ -4,18 +4,17 @@
 <meta charset="utf-8">
 {{ .Hugo.Generator }}
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="/css/main.css">
-<link rel="alternate" href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
-<link href="https://cdn.bootcss.com/highlight.js/9.7.0/styles/tomorrow.min.css" rel="stylesheet">
-<script src="https://cdn.bootcss.com/highlight.js/9.8.0/highlight.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<link rel="alternate" href="{{ .Site.BaseURL }}/index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
+<link href="{{ .Site.BaseURL }}css/tomorrow.min.css" rel="stylesheet">
+<link href="{{ .Site.BaseURL }}/css/main.css" rel="stylesheet">
+<link href="{{ .Site.BaseURL }}css/jqcloud.css" rel="stylesheet">
+<script src="{{ .Site.BaseURL }}js/high.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/jqury.min.js"></script>
 <script src="{{ .Site.BaseURL }}js/top.js"></script>
+<script src="{{ .Site.BaseURL }}js/jqcloud.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-{{ if eq .Title "Tags"}}
-	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/jqcloud.css">
-	<script type="text/javascript" src="{{ .Site.BaseURL }}js/jqcloud.js"></script>
-{{ end }}
+
 <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
 </head>
 <body>
