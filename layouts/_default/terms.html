@@ -7,7 +7,7 @@ var word=[];
     var data = {}; 
     data.text = {{ $name }};  
     data.weight = parseInt(Math.random()*10,10)+1;
-    data.link={{$.Site.BaseURL}}+/tags/+data.text;
+    data.link=data.text+'/';
     word.push(data);  
 {{ end }}
 

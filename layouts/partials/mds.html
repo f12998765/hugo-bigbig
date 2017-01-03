@@ -5,7 +5,7 @@
     <div class="list_">
       <div class="tag">
         {{ range .Params.tags }}
-          <span><a href="{{$.Site.BaseURL}}/tags/{{ . | urlize }}">⍟{{ . }}</a></span>
+          <span><a href="/tags/{{ . | urlize }}/">⍟{{ . }}</a></span>
         {{ end }}
       </div>
       <div class="time">{{ .Date.Format "1月2日  2006" }}</div>
