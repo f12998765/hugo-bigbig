@@ -132,18 +132,20 @@ a:hover{
 }
 
 .list_tit{
+  height: 8rem;
+  line-height: 8rem;
   font-size: 4rem;
 }
 
-.list_{
-  margin-top: 1rem;
+.list_tag,.list_time{
+  height: 2rem;
+  line-height: 2rem;
   font-size: 1.5rem;
+  width: 100%;
 }
-.tag{
-  float: left;
-}
-.time{
-  float: right;
+
+.list_time{
+  text-align: right;
 }
 
 /*标签云*/

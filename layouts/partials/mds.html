@@ -1,15 +1,17 @@
 <div class="main">
 {{ range (where .Data.Pages ".Params.hidefromhome" "!=" "true") }}
   <div class="list">
+
     <div class="list_tit"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
-    <div class="list_">
-      <div class="tag">
-        {{ range .Params.tags }}
-          <span><a href="/tags/{{ . | urlize }}/">⍟{{ . }}</a></span>
-        {{ end }}
-      </div>
-      <div class="time">{{ .Date.Format "1月2日  2006" }}</div>
+
+    <div class="list_tag">
+      {{ range .Params.tags }}
+        <span><a href="/tags/{{ . | urlize }}/">⍟{{ . }}</a></span>
+      {{ end }}
     </div>
+    
+    <div class="list_time">{{ .Date.Format "1月2日  2006" }}</div>
+
   </div>
 {{ end }}
 </div>
