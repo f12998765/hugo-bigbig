@@ -4,13 +4,15 @@
 
     <div class="list_tit"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
 
-    <div class="list_tag">
-      {{ range .Params.tags }}
-        <span><a href="/tags/{{ . | urlize }}/">⍟{{ . }}</a></span>
-      {{ end }}
+    <div class="list_info">
+      <span class="list_tag">
+        {{ range .Params.tags }}
+          <span><a href="/tags/{{ . | urlize }}/">⍟{{ . }}</a></span>
+        {{ end }}
+      </span>
+      
+      <span class="list_time">{{ .Date.Format "1月2日  2006" }}</span>
     </div>
-    
-    <div class="list_time">{{ .Date.Format "1月2日  2006" }}</div>
 
   </div>
 {{ end }}

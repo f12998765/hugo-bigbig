@@ -1,0 +1,31 @@
+div.con a{
+  text-decoration: none;
+  border-bottom:1px dashed  #eb4e32;
+}
+
+div.con a:hover{
+  color: #eb4e32;
+  border-bottom:1px dashed  #eb4e32;
+}
+
+div.con ol li,div.con ul li{ 
+	margin: 1rem 0;
+	line-height: 3rem;
+}
+div.con p{
+	line-height: 3rem;
+}
+div.con blockquote{
+	border-left:2px dashed #eb4e32;
+	margin-left: 0;
+	margin-right:0; 
+}
+div.con blockquote p{
+	margin-left: 3rem;
+}
+div.con pre{
+	border-left:2px dashed #7AC5CD;
+}
+div.con code{
+	border-bottom:1px dashed  #7AC5CD;
+}
