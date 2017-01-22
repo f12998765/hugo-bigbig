@@ -26,6 +26,9 @@ div.con blockquote p{
 div.con pre{
 	border-left:2px dashed #7AC5CD;
 }
+div.con pre code{
+	border-bottom:none;
+}
 div.con code{
 	border-bottom:1px dashed  #7AC5CD;
 }
