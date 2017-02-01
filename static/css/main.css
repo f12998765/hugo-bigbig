@@ -6,6 +6,12 @@ html,body{
 html{
   font-size: 1vw;
 }
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('./font/SourceSansPro/SourceSansPro-Regular.otf');
+}
+
 body{
   color: #182532;
   font-family: 'Source Sans Pro', sans-serif;
@@ -173,10 +179,27 @@ a:hover{
 
 @media all and (max-width: 800px){
   .gos{
-    font-size: 5rem;
+    font-size: 5rem;  
+  }
+  .siteTit{
+    background-color: #FFF;
+    color: #182532;
   }
   .tit{
     font-size: 7rem;
+  }
+  .main{
+    width: 81%;
+  }
+
+  .list_tit{
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 6rem;
+  }
+  #gotop{
+    right: 1rem;
+    bottom: 1rem;
   }
   .con{
     width: 89%;
