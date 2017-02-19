@@ -1,6 +1,6 @@
 +++
+draft = true
+tags = ["",""]
+date = ""
 title = ""
-date = "now()"
-tags = [""]
-
 +++

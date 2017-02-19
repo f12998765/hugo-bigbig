@@ -26,6 +26,10 @@ a:hover{
   color: #eb4e32;
 }
 
+img {
+    max-width: 72vw;
+}
+
 .cons{
   width: 72%;
   margin: 0 auto;
@@ -177,6 +181,22 @@ a:hover{
     z-index: 100;
 }
 
+/*表格*/
+table{
+   width:72vw;
+}
+
+tr td{
+   border-top:1px dashed #aaa;
+}
+tr>td:first-child,tr>th:first-child {
+   text-align:center;
+   border-right:1px dashed #aaa;
+}
+tr{
+   height:3rem;
+   line-height:3rem;
+}
 @media all and (max-width: 800px){
   .gos{
     font-size: 5rem;  
