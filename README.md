@@ -4,8 +4,8 @@
 
 Demo：[https://www.xizero.com](https://www.xizero.com)
 
-![](https://ox.xizero.com/uploads/2017/03/hugo.png)
+![](./demo/hugo.png)
 
-![](https://ox.xizero.com/uploads/2017/03/hugo_tags.png)
+![](./demo/hugo_tags.png)
 
-![](https://ox.xizero.com/uploads/2017/03/hugo_list.png)
+![](./demo/hugo_list.png)
