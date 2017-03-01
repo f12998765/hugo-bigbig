@@ -4,17 +4,11 @@
 <meta charset="utf-8">
 {{ .Hugo.Generator }}
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <link rel="alternate" href="{{ .Site.BaseURL }}/index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
-<link href="{{ .Site.BaseURL }}css/tomorrow.min.css" rel="stylesheet">
-<link href="{{ .Site.BaseURL }}css/main.css" rel="stylesheet">
-<link href="{{ .Site.BaseURL }}css/context.css" rel="stylesheet">
-<link href="{{ .Site.BaseURL }}css/jqcloud.css" rel="stylesheet">
-<script src="{{ .Site.BaseURL }}js/high.min.js"></script>
+<link href="{{ .Site.BaseURL }}css/block.css" rel="stylesheet">
 <script src="{{ .Site.BaseURL }}js/jqury.min.js"></script>
 <script src="{{ .Site.BaseURL }}js/top.js"></script>
-<script src="{{ .Site.BaseURL }}js/jqcloud.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+
 
 <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
 </head>
@@ -22,25 +16,10 @@
 
 <div id="gotop" title="🚀 go top"></div>
 
-<div class="top">
 
-	<div class="gos">
-		<span class="go"><a href="{{ $.Site.BaseURL }}">Home</a></span>
-		<span class="go"><a href="/tags/">Tags</a></span>
-		<span class="go"><a href="/about/">About</a></span>
-	</div>
-	
-	{{ if eq $isHomePage true }}
-		<div class="siteTit">
-			{{ .Site.Title }}
-		</div>
-	{{ else }}
-		<div class="tit">
-			{{ .Title }}
-		</div>
-
-	{{ end }}
-
+<div class="titlist">
+	<span><a href="{{ .Site.BaseURL }}">Home</a></span>
+	<span><a href="{{ .Site.BaseURL }}/tags/">Tags</a></span>
+	<span><a href="{{ .Site.BaseURL }}/about">About</a></span>
 </div>
-
 

@@ -1,0 +1,43 @@
+.home{
+    width: 72%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column ;
+}
+.menu{
+    height: 24vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.icon{
+    width: 24vh;
+    height: 24vh;
+    background: url("/img/z.png") no-repeat;
+    background-size: 100% 100%;
+    float: left;
+}
+.site_tit{
+    float: left;
+    /*height: 20vh;*/
+    font-size: 7rem;
+    line-height: 24vh;
+}
+
+@media all and (max-width: 800px){
+    .home{
+        width: 100%;
+        height: 100%;
+    }
+    .icon{
+        width: 20vw;
+        height: 20vw;
+    }
+    .site_tit{
+        font-size: 3rem;
+    }
+
+}

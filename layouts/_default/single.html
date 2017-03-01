@@ -1,5 +1,18 @@
 {{ partial "header.html" . }}
 
+<link href="{{ .Site.BaseURL }}css/context.css" rel="stylesheet">
+<link href="{{ .Site.BaseURL }}css/tomorrow.min.css" rel="stylesheet">
+<script src="{{ .Site.BaseURL }}js/high.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<div class="tit">
+	{{ .Title }}
+</div>
+
+<div class="toc">
+	{{ .TableOfContents }}
+</div>
+
 <div class="con">
 	{{ .Content }}
 </div>

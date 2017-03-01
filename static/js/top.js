@@ -2,10 +2,16 @@ function goTop()
 {
     $(window).scroll(function(e) {
         //若滚动条离顶部大于100元素
-        if($(window).scrollTop()>100)
+        if($(window).scrollTop()>300){
+            if(window.innerWidth >= 800)
+                $('.toc').fadeIn(500);
             $("#gotop").fadeIn(1000);//以1秒的间隔渐显id=gotop的元素
-        else
+        }
+        else{
+            $('.toc').fadeOut(500);
             $("#gotop").fadeOut(500);//以1秒的间隔渐隐id=gotop的元素
+        }
+            
     });
 };
 

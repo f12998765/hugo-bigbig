@@ -1,34 +1,119 @@
-div.con a{
-  text-decoration: none;
-  border-bottom:1px dashed  #eb4e32;
+.con{
+	width: 56%;
+	margin: 0 auto;
+}
+.con a{
+	color: #47a3da;
+	text-decoration: none;
+	border-bottom:1px dashed  #FFF;
 }
 
-div.con a:hover{
-  color: #eb4e32;
-  border-bottom:1px dashed  #eb4e32;
+.con a:hover{
+	color: #47a3da;
+	border-bottom:1px dashed  #47a3da;
 }
 
-div.con ol li,div.con ul li{ 
+.con ol li,.con ul li{ 
 	margin: 1rem 0;
-	line-height: 3rem;
+	line-height: 1.5rem;
+	text-align: left;
 }
-div.con p{
-	line-height: 3rem;
+.con p{
+	line-height: 2rem;
 }
-div.con blockquote{
+.con blockquote{
 	border-left:2px dashed #eb4e32;
 	margin-left: 0;
 	margin-right:0; 
 }
-div.con blockquote p{
-	margin-left: 3rem;
+.con blockquote p{
+	margin-left: 2rem;
+	color: #666;
 }
-div.con pre{
+.con pre{
 	border-left:2px dashed #7AC5CD;
 }
-div.con pre code{
+.con pre code{
 	border-bottom:none;
 }
-div.con code{
+.con code{
 	border-bottom:1px dashed  #7AC5CD;
+}
+
+.con img{
+	max-width: 100%;
+	border-radius: 4px;
+	box-shadow: 2px 2px 7px #888888;
+}
+
+/*表格*/
+table{
+   width:100%;
+}
+
+tr td{
+   border-bottom:1px dashed #aaa;
+   border-left:1px dashed #aaa;
+   text-align: center;
+}
+
+tr th{
+	border: 1px dashed #aaa;
+	border-right: none;
+}
+tr>td:first-child,tr>th:first-child{
+	border-left: none;
+}
+tr{
+   height:3rem;
+   line-height:3rem;
+}
+
+
+/*侧边*/
+
+.toc{
+	color: #47a3da;
+	position: fixed;
+	top: 0;
+	right: 0;
+	display: none;
+	width: 25vw;
+}
+.toc ul {
+	list-style:none;
+}
+
+.toc a{
+	color: #47a3da;
+	text-decoration: none;
+	border-bottom:1px dashed  #FFF;	
+}
+
+.toc a:hover{
+	color: #47a3da;
+	border-bottom:1px dashed  #47a3da;	
+}
+
+ul>li>ul>li>ul>li>ul {
+	display: none;
+}
+
+@media all and (max-width: 800px){
+	table{
+		font-size: 0.8rem;
+	}
+	tr{
+		height:1rem;
+		line-height:1rem;
+	}
+	.con{
+		width: 86%;
+		margin: 0 auto;
+	}
+	.con table ol li,.con table ul li{ 
+		margin: 0;
+		line-height: 1rem;
+		text-align: left;
+	}
 }

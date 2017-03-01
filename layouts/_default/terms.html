@@ -1,7 +1,12 @@
 {{ partial "header.html" . }}
 
+<link href="{{ .Site.BaseURL }}css/jqcloud.css" rel="stylesheet">
+<script src="{{ .Site.BaseURL }}js/jqcloud.js"></script>
+
+
+
 <script>
-var word=[];  
+var word=[];
 
 {{ range $name, $value := .Site.Taxonomies.tags }}
     var data = {}; 
@@ -12,13 +17,29 @@ var word=[];
 {{ end }}
 
 $(function() {
-    $(".tagdiv").jQCloud(word);
+    $("#tags").jQCloud(word);
 });
+
+
+
 </script>
 
-<div class="tagdiv">
-
-
+<div class="tit">
+	{{ .Title }}
 </div>
 
+<div id="tags" style="width: 91%;height:100vh;margin: 0 auto;"></div>
+
+<script>
+$('#tags').on('click',function(e){
+    $("#tags").empty();
+    for(var i in word){
+        word[i].weight = parseInt(Math.random()*10,10)+1;
+    }
+    $("#tags").jQCloud(word);
+})
+$('#tags span').on('click',function(e){
+    e.stopPropagation();//点击切换按钮阻止冒泡
+})
+</script>
 {{ partial "footer.html" . }}

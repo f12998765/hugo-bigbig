@@ -1,6 +1,7 @@
 +++
 draft = true
-tags = ["",""]
+tags = [""]
 date = ""
 title = ""
 +++
+

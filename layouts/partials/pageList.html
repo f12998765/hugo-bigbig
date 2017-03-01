@@ -1,0 +1,29 @@
+<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/time.css" />
+
+<div class="main">
+    <ul class="cbp_tmtimeline">
+        {{ range (where .Data.Pages ".Params.hidefromhome" "!=" "true") }}
+        <li>
+            <time class="cbp_tmtime" datetime="2013-04-10">
+                <span>{{ .Date.Format "2006" }}</span>
+                <span>{{ .Date.Format "01/02" }}</span>
+            </time>
+
+            <div class="cbp_tmicon">
+                <a href="/categories/{{ .Params.categories | urlize }}/">
+                    <div class="icon_{{ .Params.categories}}"></div>
+                </a> 
+            </div>
+            
+            <div class="cbp_tmlabel">
+                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                <p>
+                    {{ range .Params.tags }}
+                    <span><a href="/tags/{{ . | urlize }}/">⍟{{ . }}</a></span>
+                    {{ end }}
+                </p>
+            </div>
+        </li>
+        {{ end }}
+    </ul>
+</div>
